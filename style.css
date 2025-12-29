@@ -22,20 +22,53 @@ body
 
 .frame
 {
-    width: 300px;
-    height: 100px;
-    background-color: var(--violet);
-    color: var(--orange);
-
     /* display */
     display: flex;
     align-items: center;
     justify-content: center;
+
+    width: 300px;
+    height: 100px;
+    background-color: var(--violet);
+    color: var(--orange);
+    border-radius: 20px;
+    font-size: 4.5em;
+
+
 }
 
 .control
 {
+    /* display */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
     width: 300px;
-    height: 100px;
+    height: 60px;
+    /* background-color: var(--violet); */
+
+}
+
+.button
+{
+    width: 120px;
+    height: 75%;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5em;
     background-color: var(--violet);
+    color: var(--orange);
+    transition: transform 0.2s ease;
+}
+
+.button:hover
+{
+    background-color: var(--orange);
+    color: var(--darkviolet);
+}
+
+.button:active
+{
+    transform: scale(0.8);
 }
