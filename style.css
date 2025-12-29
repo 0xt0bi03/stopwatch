@@ -1,0 +1,12 @@
+:root
+{
+    --black: #211832;
+    --darkviolet: #412B6B;
+    --violet: #5C3E94;
+    --orange: #F25912;
+}
+
+body
+{
+    background-color: var(--black);
+}
