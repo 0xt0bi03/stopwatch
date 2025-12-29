@@ -13,7 +13,7 @@ body
     /* display */
     display: flex;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
     height: 95vh;
     flex-direction: column;
     gap: 10px;
@@ -25,6 +25,12 @@ body
     width: 300px;
     height: 100px;
     background-color: var(--violet);
+    color: var(--orange);
+
+    /* display */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .control
