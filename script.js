@@ -1,3 +1,4 @@
+// VARIABLES
 const hour = document.getElementById('hour');
 const minute = document.getElementById('minute');
 const second = document.getElementById('second');
@@ -6,7 +7,11 @@ const stopbutton = document.getElementById('stop');
 const resetbutton = document.getElementById('reset');
 
 
+// FRAME
+const frame = document.getElementById('frame');
 
+
+// FUNCTION
 function showtime()
 {
     let hr = Number(hour.textContent);
@@ -15,12 +20,12 @@ function showtime()
     
     sec++;
     if (sec == 60)
-    {
-        sec = 0;
-        min++;
-    }
-    if (min == 60)
-    {
+        {
+            sec = 0;
+            min++;
+        }
+        if (min == 60)
+            {
         hr++;
         min = 0;
         sec = 0;
@@ -30,15 +35,24 @@ function showtime()
     second.textContent = sec;
 }
 
-let timeinterval;
+
+// FUNCTION CALL STATEMENTS
+let timeinterval = null;
 
 startbutton.addEventListener('click', () => 
 {
-    timeinterval = setInterval(showtime, 1000);
-})
-
-stopbutton.addEventListener('click', () =>
+    if (!timeinterval)
     {
+        frame.style.setProperty('background-color', 'var(--orange)');
+        frame.style.setProperty('color', 'var(--darkviolet)');
+        timeinterval = setInterval(showtime, 1000);
+    }
+})
+    
+stopbutton.addEventListener('click', () =>
+{
+        frame.style.setProperty('background-color', 'var(--violet)');
+        frame.style.setProperty('color', 'var(--orange)');
         clearInterval(timeinterval);
     })
     
