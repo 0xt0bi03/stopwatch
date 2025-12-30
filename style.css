@@ -52,11 +52,11 @@ body
 
 .button
 {
-    width: 120px;
+    width: 90px;
     height: 75%;
     border: none;
     border-radius: 10px;
-    font-size: 1.5em;
+    font-size: 1.4em;
     background-color: var(--violet);
     color: var(--orange);
     transition: transform 0.2s ease;

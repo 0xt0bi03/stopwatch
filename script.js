@@ -2,11 +2,10 @@ const hour = document.getElementById('hour');
 const minute = document.getElementById('minute');
 const second = document.getElementById('second');
 const startbutton =  document.getElementById('start');
-const stopbutton =
+const stopbutton = document.getElementById('stop');
 
-// let hour = 0;
-// let minute = 0;
-// let second = 0;
+
+
 
 function countdown()
 {
@@ -22,9 +21,16 @@ function countdown()
         minute.textContent = 0;
         hour.textContent += 1;
     }
-
-    const stopbutton = addEventListener('click' )
-    // console.log(`the time is ${hour}:${minute}:${second}`)
+    
+    const stopbutton = addEventListener('click', () =>
+    {
+        second.textContent = 0;
+        minute.textContent = 0;
+        hour.textContent = 0;
+        clearInterval(timeinterval);
+            
+    }
+    )
 }
 
 const timeinterval = setInterval(countdown, 1000);
