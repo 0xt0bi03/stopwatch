@@ -62,6 +62,7 @@ stopbutton.addEventListener('click', () =>
         frame.style.setProperty('background-color', 'var(--violet)');
         frame.style.setProperty('color', 'var(--orange)');
         clearInterval(timeinterval);
+        timeinterval = null;
     })
     
 resetbutton.addEventListener('click', () =>

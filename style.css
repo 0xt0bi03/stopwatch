@@ -98,6 +98,7 @@ body
 {
     background-color: var(--orange);
     color: var(--darkviolet);
+    transition: 0.3s ease;
 }
 
 .button:active
