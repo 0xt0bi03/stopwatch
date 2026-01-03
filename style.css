@@ -33,16 +33,22 @@ body
 .theme
 {
     width: 75px;
-    height: 50px;
+    height: 30px;
     background-color: var(--violet);
     color: var(--orange);
+
+    /* DISPLAY */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+/* .theme:hover */
 
 .units
 {
     width: 250px;
     font-size: 1.4em;
-    /* background-color: aqua; */
     margin: 0;
     padding: 0;
     color: var(--orange);
