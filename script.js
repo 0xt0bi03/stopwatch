@@ -79,6 +79,11 @@ function changetheme(trigger)
 {
     if (trigger == true)
     {
+        document.documentElement.style.setProperty('--darkviolet', '#452829');
+        document.documentElement.style.setProperty('--violet', '#57595B');
+        document.documentElement.style.setProperty('--lightviolet', '#E8D1C5');
+        document.documentElement.style.setProperty('--orange', '#F3E8DF');
+
         
     }
 }
