@@ -1,5 +1,5 @@
 // VARIABLES
-const theme = document.getElementsByClassName('theme');
+const theme = document.getElementById('theme');
 const hour = document.getElementById('hour');
 const minute = document.getElementById('minute');
 const second = document.getElementById('second');
@@ -74,7 +74,6 @@ resetbutton.addEventListener('click', () =>
     millisecond.textContent = 0;
 })
 
-let trigger = true;
 function changetheme(trigger)
 {
     if (trigger == true)
@@ -83,9 +82,22 @@ function changetheme(trigger)
         document.documentElement.style.setProperty('--violet', '#57595B');
         document.documentElement.style.setProperty('--lightviolet', '#E8D1C5');
         document.documentElement.style.setProperty('--orange', '#F3E8DF');
+        return false;
+    }
+    else
+    {
+        document.documentElement.style.setProperty('--darkviolet', '#211832');
+        document.documentElement.style.setProperty('--violet', '#412B6B');
+        document.documentElement.style.setProperty('--lightviolet', '#5C3E94');
+        document.documentElement.style.setProperty('--orange', '#F25912');
+        return true;
 
-        
     }
 }
 
-// theme.addEventListener('click', changetheme(trigger));
+let trigger = true;
+
+theme.addEventListener('click', () => 
+{
+    trigger = changetheme(trigger);
+});
