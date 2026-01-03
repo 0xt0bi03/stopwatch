@@ -1,4 +1,5 @@
 // VARIABLES
+const theme = document.getElementsByClassName('theme');
 const hour = document.getElementById('hour');
 const minute = document.getElementById('minute');
 const second = document.getElementById('second');
@@ -72,3 +73,14 @@ resetbutton.addEventListener('click', () =>
     second.textContent = 0;
     millisecond.textContent = 0;
 })
+
+let trigger = true;
+function changetheme(trigger)
+{
+    if (trigger == true)
+    {
+        
+    }
+}
+
+// theme.addEventListener('click', changetheme(trigger));
