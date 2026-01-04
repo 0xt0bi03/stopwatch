@@ -79,6 +79,7 @@ body
     color: var(--orange);
     border-radius: 20px;
     font-size: 4.5em;
+    transition: none;
 
 
 }
